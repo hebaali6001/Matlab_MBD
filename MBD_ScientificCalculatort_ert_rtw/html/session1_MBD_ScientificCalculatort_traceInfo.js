@@ -1,0 +1,29 @@
+function RTW_rtwnameSIDMap() {
+	this.rtwnameHashMap = new Array();
+	this.sidHashMap = new Array();
+	this.rtwnameHashMap["<Root>"] = {sid: "session1_MBD_ScientificCalculatort"};
+	this.sidHashMap["session1_MBD_ScientificCalculatort"] = {rtwname: "<Root>"};
+	this.rtwnameHashMap["<Root>/In1"] = {sid: "session1_MBD_ScientificCalculatort:1"};
+	this.sidHashMap["session1_MBD_ScientificCalculatort:1"] = {rtwname: "<Root>/In1"};
+	this.rtwnameHashMap["<Root>/In2"] = {sid: "session1_MBD_ScientificCalculatort:2"};
+	this.sidHashMap["session1_MBD_ScientificCalculatort:2"] = {rtwname: "<Root>/In2"};
+	this.rtwnameHashMap["<Root>/Logical Operator"] = {sid: "session1_MBD_ScientificCalculatort:3"};
+	this.sidHashMap["session1_MBD_ScientificCalculatort:3"] = {rtwname: "<Root>/Logical Operator"};
+	this.rtwnameHashMap["<Root>/Logical Operator1"] = {sid: "session1_MBD_ScientificCalculatort:4"};
+	this.sidHashMap["session1_MBD_ScientificCalculatort:4"] = {rtwname: "<Root>/Logical Operator1"};
+	this.rtwnameHashMap["<Root>/Logical Operator2"] = {sid: "session1_MBD_ScientificCalculatort:5"};
+	this.sidHashMap["session1_MBD_ScientificCalculatort:5"] = {rtwname: "<Root>/Logical Operator2"};
+	this.rtwnameHashMap["<Root>/Logical Operator3"] = {sid: "session1_MBD_ScientificCalculatort:6"};
+	this.sidHashMap["session1_MBD_ScientificCalculatort:6"] = {rtwname: "<Root>/Logical Operator3"};
+	this.rtwnameHashMap["<Root>/Out SUM"] = {sid: "session1_MBD_ScientificCalculatort:7"};
+	this.sidHashMap["session1_MBD_ScientificCalculatort:7"] = {rtwname: "<Root>/Out SUM"};
+	this.rtwnameHashMap["<Root>/Out SUB"] = {sid: "session1_MBD_ScientificCalculatort:8"};
+	this.sidHashMap["session1_MBD_ScientificCalculatort:8"] = {rtwname: "<Root>/Out SUB"};
+	this.rtwnameHashMap["<Root>/Out MUL"] = {sid: "session1_MBD_ScientificCalculatort:9"};
+	this.sidHashMap["session1_MBD_ScientificCalculatort:9"] = {rtwname: "<Root>/Out MUL"};
+	this.rtwnameHashMap["<Root>/Out DIV "] = {sid: "session1_MBD_ScientificCalculatort:10"};
+	this.sidHashMap["session1_MBD_ScientificCalculatort:10"] = {rtwname: "<Root>/Out DIV "};
+	this.getSID = function(rtwname) { return this.rtwnameHashMap[rtwname];}
+	this.getRtwname = function(sid) { return this.sidHashMap[sid];}
+}
+RTW_rtwnameSIDMap.instance = new RTW_rtwnameSIDMap();
